@@ -1,0 +1,10 @@
+def get_corresponding_number(name):
+    name = name.lower()
+    numbers = []
+    for char in name:
+        if char.isalpha():
+            numbers.append(ord(char) - 96)
+    return numbers
+
+name = "Nikhil Chandrashaker"
+print(get_corresponding_number(name))
